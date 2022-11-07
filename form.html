@@ -3,23 +3,55 @@
 </head>
 <body bgcolor="#D3D3D3">
 
-	<form action="hello.html" method="post">
-		Name<input type ="text" id="name"><br>
-		Password<input type ="password" id="password"><br>
-		Male<input type ="radio" name="A">
-		Female<input type ="radio"name="A"><br>
-		Address<textarea></textarea><br>
-		<input type ="Checkbox"><br>
-		<input type ="File"><br>
+<p style="font-size:30px">
+<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="10" ><b>WELCOME TO FRESHERS WORLD !!! </b></marquee></p>
 
-		<select>
+<form action="hello.html" method="post">
+
+<table border="1">
+<tr><td colspan="3"><strong>Registration Form</strong></td></tr>
+
+<tr><td>Name</td>
+<td colspan="2"><input type ="text" id="name"></td></tr>
+
+<tr><td>Password</td>
+<td colspan="2"><input type ="password" id="password"></td></tr>
+
+<tr><td>Gender</td>
+<td colspan="2">Male<input type ="radio" name="A">
+Female<input type ="radio"name="A"><br></td></tr>
+
+<tr><td>Phone no</td>
+<td colspan="2"><input type ="text" id="phone"></td></tr>
+
+<tr><td>Email ID</td>
+<td colspan="2"><input type ="text" id="mail"></td></tr>
+
+<tr><td>Qualification</td>
+<td colspan="2"><select>
 			<option>MCA</option>	
 			<option>BCA</option>
-		</select><br>
+		</select></td></tr>
 
-		<input type ="submit" value="Login">
-		<input type="reset">
+            <tr>
+                <td>Languages Known</td>
+                <td colspan="2">
+                    <input type="checkbox">Malayalam 
+                    <input type="checkbox">English 
+                    <input type="checkbox">Hindi
+                </td>
+            </tr>
+
+<tr><td>Address</td>
+<td colspan="2"><textarea></textarea></td></tr>	
+		
+        <tr><td>Upload CV</td><td><input type ="File"></td></tr>
+<tr><td><input type="reset"></td>
+<td colspan="2"><input type ="submit" value="Login"></td></tr>			
+				
+</table>
+
+		
 	</form>
-
 </body>
 </html>
