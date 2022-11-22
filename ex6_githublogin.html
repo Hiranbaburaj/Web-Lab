@@ -1,76 +1,129 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 <style>
-body {
-  background-color: white;
+body{
+    font-family: Arial;
+    font-size: 14px;
+    background-color: white;
 }
 
-p.hd {
-  color: black;
-  text-align: center;
-  font-size: 30px;
+h1 {
+   font-weight: normal;
+   font-size: 24px;
+   margin: 20px 10px;
+   margin-top: 10px;
+  }
+  
+.main{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-p {
-  font-family: arial;
-  font-size: 15px;
+.logo{
+width: 45px;
 }
 
-table {
-	border: 0.25px solid #cacaca;
-	text-align: left;
-    font-family: arial;
-    font-size: 15px;
-	padding: 15px; 
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #eeeeec;
+.box{
+   background: #F6F8FA;
+   border: 1px solid #E2E6EB;
+   display: flex;
+   flex-direction: column;
+   border-radius: 5px;
+   padding: 15px 20px;
 }
 
-table.2 {
-	border: 0.25px solid #cacaca;
-	text-align: left;
-    font-family: arial;
-    font-size: 15px;
-	padding: 15px; 
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #eeeeec;
+.box2{
+   background: ##fafafa;
+   border: 1px solid #E2E6EB;
+   display: flex;
+   flex-direction: column;
+   border-radius: 5px;
+   padding: 15px 45px;
+   margin-top: 20px;
 }
 
 input {
-	border: 0.25px solid #cacaca;
-    border-radius: 5px;
+   padding: 6px 6px;
+   border-radius: 8px;
+   border: 1px solid #E2E6EB;
+   width: 260px;
+   margin-top: 5px;
+  }
+  
+.submit{
+   width: 100%;
+   background: #2C974B;
+   padding: 10px 10px;
+   color: #FFFFFF;
+   margin-top: 20px;
 }
 
-input.sign {
-	color: white;
-	background-color: #2C974B;
-    width: 100%;
-    height: 30px;
-    font-family: arial;
-    font-size: 18px;
+.password{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.createacc{
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms{
+  font-size: 12px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms a{
+	margin-right: 15px;
+}
+
+.contact{
+	color: #787878;
+}
+
 </style>
-</head>
+
 <body>
+<div class="main">
 
-<p class="hd">Sign in to GitHub</p>
+	<img class="logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
 
-
-<table>
-<tr><th>Username or email address </th></tr>
-<tr><th><input type ="text" id="name"></th></tr>
-<tr><th>Password</th></tr>
-<tr><th><input type ="password" id="password"></th></tr>
-<tr><th><input class="sign" type ="submit" value="Sign in"></th></tr>
-</table>
-
-
-</body>
+	<h1>Sign in to GitHub</h1>
+    
+    <div class="box">
+    
+      <label>Username or email address</label>
+      <input type ="text" id="name">
+      
+      <div class="password">
+          <label>Password</label>
+          <a href="https://github.com/password_reset">Forgot password?</a>
+      </div><!--password-->
+      
+      <input type ="password" id="password"> 
+      <input class="submit" type ="submit" value="Sign in">
+    
+    </div><!--box-->
+    
+    <div class="box2">
+    <div class="createacc">
+    	<label>New to GitHub?</label>
+    	<a href="https://github.com/signup?source=login">Create an account.</a>
+        </div>
+    </div><!--box2-->
+    
+    <div class="terms">
+      <a href="https://github.com/site/terms">Terms </a>
+      <a href="https://github.com/site/privacy">Privacy </a>
+      <a href="https://github.com/security">Security</a>
+      <a class="contact" href="https://github.com/contact">Contact GitHub</a>
+    </div>
+</div><!--main-->
+<body>
 </html>
-
-
