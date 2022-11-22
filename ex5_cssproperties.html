@@ -7,27 +7,27 @@ body {
 }
 
 #heading {
-  font-family: times new roman;
-  font-size: 40px;
-  color: red;
-  background-color: #f9c810 ;
-  border-bottom: 2px solid red;
+    font-family: times new roman;
+    font-size: 40px;
+    color: red;
+    background-color: #f9c810 ;
+    border-bottom: 2px solid red;
 } 
 
-li.size{
+li.alignment{
   font-size: 20px;
 }
 
 
 ul{
-  font-family: times new roman;
-  font-size: 15px;
-  color: red;
-  background-color:  #f9c810 ;
-  width: 50%;
-  margin-left: 0px;
-  text-align: left;
-  border-right: 2px solid red;
+    font-family: times new roman;
+    font-size: 15px;
+    color: red;
+    background-color:  #f9c810 ;
+    width: 50%;
+    margin-left: 0px;
+    text-align: left;
+    border-right: 2px solid red;
 }
 
 #image{
@@ -39,14 +39,18 @@ ul{
 <body>
 
 
-<h1 id="heading">WELCOME TO THE WORLD OF CSS</h1>
+<h1 id="heading">
+<marquee direction="left" scrollamount="9" onmouseover="this.stop()" onmouseout="this.start()">
+WELCOME TO THE WORLD OF CSS
+</marquee></h1>
+
 
 <img id="image"src="https://st.depositphotos.com/1845839/1973/v/600/depositphotos_19730543-stock-illustration-word-cloud-css.jpg">
 
 
 <ul>
-<li class="size">Properties of CSS</li>
-<li class="size">A CSS property assign a style or behavior to an HTML element.</li>
+<li class="alignment">Properties of CSS</li>
+<li class="alignment">A CSS property assign a style or behavior to an HTML element.</li>
 <marquee direction="up" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
 <li>align-content:- Aligns items in a flex container along flex lines.</li>
 <li>align-items:- 	Aligns evenly spaced items in a flex container.</li>
@@ -66,6 +70,5 @@ ul{
 
 </body>
 </html>
-
 
 
