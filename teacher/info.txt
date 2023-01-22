@@ -1,0 +1,3 @@
+2 tables
+1.login - trname(primary) , trpass
+2. student -SELECT `rollno`, `ktuid`, `name`, `ser1`, `ser2`, `as1`, `as2`, `attn` FROM `student` WHERE 
