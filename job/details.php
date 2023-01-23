@@ -10,20 +10,74 @@ else{
 }
 ?>
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 8cm;
+}
+
+th {
+    color: #ffffff;
+    background-color: #04AA6D;
+    text-align: left;
+    padding: 8px;
+}
+
+td{
+    color: #000000;
+    text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
 </head>
 <body>
-<?php echo $row["name"]; ?>
-<?php echo $row["email"]; ?>
-<?php echo $row["age"]; ?>
-<?php echo $row["phone"]; ?>
-<a href="logout.php">Logout</a>
+
+<h2>Job Applicant Details</h2>
+
+
+<table>
+  <tr>
+  <th>Personal Details</th>
+  <th></th>
+  </tr>
+  <tr>
+  <td>Name</td>
+  <td><?php echo $row["name"]; ?></td>
+  </tr>
+  <tr>
+  <td>Email ID</td>
+  <td><?php echo $row["email"]; ?></td>
+  </tr>
+  <tr>
+  <td>Age</td>
+  <td><?php echo $row["age"]; ?></td>
+  </tr>
+  <tr>
+  <td>Phone No</td>
+  <td><?php echo $row["phone"]; ?></td>
+  </tr>
+    <tr>
+    <td><a href="logout.php">Logout</a></td>
+    <td></td>
+    </tr>
+</table>
 
 </body>
 </html>
