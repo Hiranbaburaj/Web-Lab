@@ -2,7 +2,7 @@
 session_start();
 $conn = mysqli_connect("localhost","root","","teacher");
 if (!$conn){
-    echo "Connected";
+    echo "Not Connected";
 }
 
 ?>
